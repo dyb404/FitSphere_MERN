@@ -1,0 +1,54 @@
+.classes-page { min-height: 80vh; padding: 2rem 1rem; }
+
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.class-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.class-card:hover { border-color: #e74c3c; }
+.class-card--past { opacity: 0.6; }
+
+.class-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.class-card__header h3 { margin: 0; font-size: 1.05rem; color: #fff; }
+
+.badge {
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.badge--past { background: #333; color: #aaa; }
+.badge--full { background: rgba(231,76,60,0.2); color: #e74c3c; border: 1px solid #e74c3c; }
+
+.class-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.class-card__desc { font-size: 0.875rem; color: #ccc; margin: 0; }
+
+@media (max-width: 600px) {
+  .classes-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,158 @@
+.dashboard-page {
+  background-color: rgba(0, 0, 0, 0.927);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+.dashboard-header h1 {
+  color: #fff;
+}
+
+.dashboard-header p {
+  color: #aaa;
+}
+
+.dashboard-div {
+  display: flex;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.dashboard-section-client{
+  background: #111;
+  border: 1px solid white;
+  border-radius: 14px;
+  
+  flex: 1;
+  padding: 22px;
+}
+.dashboard-section-client:hover{
+  box-shadow: 0 8px 24px rgba(197, 195, 195, 0.801);
+}
+.progress-log{
+  background: #111;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 14px;
+  padding: 22px;
+ }
+.progress-log:hover{
+  box-shadow: 0 8px 24px rgba(197, 195, 195, 0.801);
+}
+.dashboard-section-client h2 {
+  color: #fff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 8px;
+}
+
+/* =========================
+   WORKOUTS
+========================= */
+
+.workouts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.workout-card {
+  background: #181818;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.workout-card h3 {
+  color: #fff;
+}
+
+.trainer-name,
+.workout-description {
+  color: #aaa;
+}
+
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.progress-table th,
+.progress-table td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  color: #ddd;
+}
+td:hover{
+  background-color: rgba(0, 0, 0, 0.822);
+}
+.progress-table th {
+  color: #fff;
+}
+
+
+
+.addbtn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0px;
+  background: blueviolet;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+}
+.addbtn:hover{
+  background: rgba(137, 43, 226, 0.128);
+  padding: 12px 16px;
+  transform: translateY(-5px);
+  transition: ease-in 0.3s;
+}
+.btn-delete {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* =========================
+   MODAL (LOCAL ONLY)
+========================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #111;
+  padding: 22px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group label {
+  color: #ddd;
+}
+
+.form-group input,
+.form-group textarea {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+}

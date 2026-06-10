@@ -1,0 +1,40 @@
+
+.not-found-page {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.not-found-content {
+  text-align: center;
+}
+
+.not-found-content h1 {
+  font-size: 8rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.not-found-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.not-found-content p {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .not-found-content h1 {
+    font-size: 5rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 1.5rem;
+  }
+}

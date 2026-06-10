@@ -1,0 +1,131 @@
+.admin-page {
+  min-height: 80vh;
+  padding: 2rem 1rem;
+  background-color: #000000f0;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.stat-card--admin { border-color: #e74c3c; }
+.stat-card--trainer { border-color: #f39c12; }
+.stat-card--client { border-color: #27ae60; }
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.admin-section {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.admin-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.tab-group {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  border: 1px solid #3a3a5a;
+  background: transparent;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.tab-btn--active,
+.tab-btn:hover {
+  background: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #3a3a5a;
+  background: #0f0f1a;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #e74c3c;
+}
+
+.role-select {
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #3a3a5a;
+  background: #0f0f1a;
+  color: #fff;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.role-select--admin { border-color: #e74c3c; color: #e74c3c; }
+.role-select--trainer { border-color: #f39c12; color: #f39c12; }
+.role-select--client { border-color: #27ae60; color: #27ae60; }
+
+.you-badge {
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.form-error {
+  background: rgba(231, 76, 60, 0.15);
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .admin-stats { grid-template-columns: repeat(2, 1fr); }
+  .admin-controls { flex-direction: column; align-items: stretch; }
+  .search-input { min-width: unset; }
+}

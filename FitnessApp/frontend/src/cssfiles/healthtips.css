@@ -1,0 +1,66 @@
+.health-tips-page {
+  padding: 4rem 0;
+  background-color: rgba(0, 0, 0, 0.902);
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.page-header p {
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tipcard {
+  background: rgba(0, 0, 0, 0.7); 
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px); 
+}
+
+.tipcard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(197, 195, 195, 0.801);
+  border-color: rgb(249, 248, 249); 
+}
+
+.tip-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: blueviolet; 
+}
+
+.tip-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: whitesmoke;
+}
+
+.tip-card p {
+  color: whitesmoke;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}

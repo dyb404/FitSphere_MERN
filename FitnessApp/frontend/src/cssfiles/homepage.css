@@ -1,0 +1,123 @@
+
+.home {
+  background-color: rgb(0, 0, 0);
+}
+
+.hero {
+  margin-bottom: 4rem;
+}
+
+.features {
+  background: rgba(0, 0, 0, 0.904);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.features-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.feature-card {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: ease-in 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.feature-card p {
+  color: white;
+}
+
+
+/* second section */
+.second-section {
+  padding: 4rem 0;
+  background-color: rgba(0, 0, 0, 0.902);
+  color: white;
+  text-align: center;
+}
+
+.second-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.second-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+
+.second-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  
+}
+
+.first {
+  background: rgb(38, 0, 255);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 10px;
+}
+
+.first:hover {
+  background: rgba(255, 255, 255, 0.416);
+}
+
+.second {
+  background: rgb(6, 6, 6);
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.second:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .secondsection h2 {
+    font-size: 2rem;
+  }
+
+  .secondsection p {
+    font-size: 1rem;
+  }
+}

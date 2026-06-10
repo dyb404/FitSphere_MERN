@@ -1,0 +1,126 @@
+.program-title{
+  color: whitesmoke;
+}
+
+.pricing-page {
+  padding: 4rem 0;
+  background-color: rgba(0, 0, 0, 0.927);
+}
+
+.pricing-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.pricing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-header p {
+  font-size: 1.25rem;
+  color: whitesmoke;
+}
+
+.pricingdiv {
+  display: flex;
+  
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pricing-card {
+  background: black;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 1;
+  text-align: center;
+  transition: ease-in-out 0.2s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 8px 24px white;
+}
+
+.pricing-card.popular {
+  border-color: blueviolet;
+  box-shadow: 0 4px 12px white;
+}
+
+.popular-badge {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: blueviolet;
+  color: whitesmoke;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-price {
+  margin: 1.5rem 0;
+}
+
+.pricing-price .price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.pricing-price .period {
+  font-size: 1rem;
+  color: whitesmoke;
+}
+
+.pricing-features {
+  list-style: none;
+  text-align: left;
+  margin: 2rem 0;
+  min-height: 200px;
+}
+
+.pricing-features li {
+  padding: 0.75rem 0;
+  display: flex;
+  color: white;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.check-icon {
+  color: blue;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.pricing-btns{
+  position: absolute;
+  bottom: 16px;
+  background: blueviolet;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  color: white;
+  padding: 0.5em;
+  transform: translateX(-50%);
+}
+.pricing-btns:hover{
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
